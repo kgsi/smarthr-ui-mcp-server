@@ -1,0 +1,581 @@
+[
+    {
+        "name": "Button",
+        "category": "Button",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "DropdownMenuButton",
+        "category": "Button",
+        "description": "引き金となるボタンラベル",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "ActionDialog",
+        "category": "Dialog",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Dialog",
+        "category": "Dialog",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "FormDialog",
+        "category": "Dialog",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "MessageDialog",
+        "category": "Dialog",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "ModelessDialog",
+        "category": "Dialog",
+        "description": "ダイアログのタイトルの内容",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "RemoteDialogTrigger",
+        "category": "Dialog",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Badge",
+        "category": "Display",
+        "description": "件数",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Chip",
+        "category": "Display",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "DefinitionList",
+        "category": "Display",
+        "description": "定義リストのアイテムの配列",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Heading",
+        "category": "Display",
+        "description": "テキストのスタイル",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Icon",
+        "category": "Display",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "LineClamp",
+        "category": "Display",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Loader",
+        "category": "Display",
+        "description": "ローダーの大きさ",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "RangeSeparator",
+        "category": "Display",
+        "hasStorybook": true,
+        "deprecated": false
+    },
+    {
+        "name": "SmartHRAILogo",
+        "category": "Display",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "SmartHRLogo",
+        "category": "Display",
+        "description": "コンポーネントのタイトル",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "StatusLabel",
+        "category": "Display",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Text",
+        "category": "Display",
+        "description": "テキストコンポーネントの HTML タグ名。初期値は span",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "TextLink",
+        "category": "Display",
+        "description": "リンクをクリックした時に発火するコールバック関数",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Timeline",
+        "category": "Display",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "VisuallyHiddenText",
+        "category": "Display",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Experimental",
+        "category": "Experimental",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Balloon",
+        "category": "Feedback",
+        "description": "レンダリングするタグ",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "ErrorScreen",
+        "category": "Feedback",
+        "description": "ロゴ",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "HelpLink",
+        "category": "Feedback",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "InformationPanel",
+        "category": "Feedback",
+        "description": "パネルのタイトル",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "NotificationBar",
+        "category": "Feedback",
+        "description": "下地",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "ResponseMessage",
+        "category": "Feedback",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Tooltip",
+        "category": "Feedback",
+        "description": "ツールチップ内に表示するメッセージ",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Fieldset",
+        "category": "Form",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "FormControl",
+        "category": "Form",
+        "description": "グループのタイトル名",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "RequiredLabel",
+        "category": "Form",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "StepFormDialog",
+        "category": "Form",
+        "description": "コンテンツなにもないDialogの基本props",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Calendar",
+        "category": "Input",
+        "description": "選択可能な開始日",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Checkbox",
+        "category": "Input",
+        "description": "`true` のとき、チェック状態を `mixed` にする",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Combobox",
+        "category": "Input",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "CurrencyInput",
+        "category": "Input",
+        "description": "通貨の値",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "DatePicker",
+        "category": "Input",
+        "description": "input 要素の `value` 属性の値",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Input",
+        "category": "Input",
+        "description": "input 要素の `type` 値",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "InputFile",
+        "category": "Input",
+        "description": "フォームのラベル",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "InputWithTooltip",
+        "category": "Input",
+        "description": "入力欄に紐付けるツールチップに表示するメッセージ",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "MultiCombobox",
+        "category": "Input",
+        "description": "選択されているアイテムのリスト",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Picker",
+        "category": "Input",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "RadioButton",
+        "category": "Input",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "RadioButtonPanel",
+        "category": "Input",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "SearchInput",
+        "category": "Input",
+        "description": "入力欄の説明を紐付けるツールチップに表示するメッセージ",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Select",
+        "category": "Input",
+        "description": "選択肢のデータの配列",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "SingleCombobox",
+        "category": "Input",
+        "description": "選択されているアイテム",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Switch",
+        "category": "Input",
+        "description": "ラベルを視覚的に隠すかどうか",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Textarea",
+        "category": "Input",
+        "description": "入力値にエラーがあるかどうか",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "WarekiPicker",
+        "category": "Input",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "AccordionPanel",
+        "category": "Interactive",
+        "description": "アイコンの左右位置",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Browser",
+        "category": "Interactive",
+        "description": "表示する item の配列",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Disclosure",
+        "category": "Interactive",
+        "description": "DisclosureTriggerのtargetIdと紐づけるId",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Dropdown",
+        "category": "Interactive",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "DropZone",
+        "category": "Interactive",
+        "description": "ボタンまたはドラッグ&ドロップでファイルが追加された時に発火するコールバック関数",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "FileViewer",
+        "category": "Interactive",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "FilterDropdown",
+        "category": "Interactive",
+        "description": "引き金となるボタンの大きさ",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "SortDropdown",
+        "category": "Interactive",
+        "description": "並び替え項目",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "AppHeader",
+        "category": "Layout",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Base",
+        "category": "Layout",
+        "description": "境界とコンテンツの間の余白",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "BaseColumn",
+        "category": "Layout",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "BottomFixedArea",
+        "category": "Layout",
+        "description": "この領域の説明",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Center",
+        "category": "Layout",
+        "description": "コンテンツの最小高さ",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Cluster",
+        "category": "Layout",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Container",
+        "category": "Layout",
+        "description": "画面幅が狭い時のブロック方向パディング",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "FloatArea",
+        "category": "Layout",
+        "description": "表示する `Button` または `AnchorButton` コンポーネント",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Header",
+        "category": "Layout",
+        "description": "ロゴ",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Layout",
+        "category": "Layout",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Reel",
+        "category": "Layout",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "SectioningContent",
+        "category": "Layout",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Sidebar",
+        "category": "Layout",
+        "description": "コンポーネントの `min-width` 値",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Stack",
+        "category": "Layout",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "AppLauncher",
+        "category": "Navigation",
+        "description": "コンポーネント内の文言を変更するための関数を設定",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "AppNavi",
+        "category": "Navigation",
+        "description": "ラベルのテキスト",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "LanguageSwitcher",
+        "category": "Navigation",
+        "description": "コンポーネント内の文言を変更するための関数を設定",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "PageCounter",
+        "category": "Navigation",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Pagination",
+        "category": "Navigation",
+        "description": "全ページ数",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "SegmentedControl",
+        "category": "Navigation",
+        "description": "選択時に返される値",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "SideMenu",
+        "category": "Navigation",
+        "description": "@default ul",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "SideNav",
+        "category": "Navigation",
+        "description": "各アイテムのデータの配列",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Stepper",
+        "category": "Navigation",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "TabBar",
+        "category": "Navigation",
+        "description": "`true` のとき、TabBar に下線を表示する",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "UpwardLink",
+        "category": "Navigation",
+        "description": "`TextLink`に渡す `elementAs` をオプションで指定",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "SpreadsheetTable",
+        "category": "Table",
+        "hasStorybook": false,
+        "deprecated": false
+    },
+    {
+        "name": "Table",
+        "category": "Table",
+        "hasStorybook": false,
+        "deprecated": false
+    }
+]

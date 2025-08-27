@@ -1,0 +1,52 @@
+{
+  "name": "@smarthr-ui/mcp-server",
+  "description": "MCP server for SmartHR UI components",
+  "version": "0.1.0",
+  "author": "kgsi",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node lib/index.js",
+    "clean": "rimraf ./lib",
+    "prepublishOnly": "pnpm clean && pnpm build",
+    "format": "prettier --write 'src/**/*.{ts,tsx,js,json}'",
+    "format:check": "prettier --check 'src/**/*.{ts,tsx,js,json}'",
+    "check": "pnpm format:check",
+    "fix": "pnpm format",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.9",
+    "prettier": "^3.3.0",
+    "tsx": "^4.7.0",
+    "vitest": "^3.2.4",
+    "rimraf": "^6.0.1",
+    "glob": "^11.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "smarthr",
+    "ui",
+    "components",
+    "typescript"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kufu/smarthr-ui.git",
+    "directory": "packages/mcp-server"
+  },
+  "bugs": {
+    "url": "https://github.com/kufu/smarthr-ui/issues"
+  }
+}
