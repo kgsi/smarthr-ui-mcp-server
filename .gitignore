@@ -6,6 +6,9 @@ npm-debug.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# build output
+/lib
+
 # Jetbrains
 .idea
 
