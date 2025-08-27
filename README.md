@@ -25,14 +25,16 @@ Configure your MCP client to use this server:
 ```json
 {
   "mcpServers": {
-    "smarthr-ui": {
+    "smarthr-ui-mcp": {
       "command": "node",
-      "args": ["./lib/index.js"],
-      "cwd": "./packages/mcp-server"
+      "args": ["/Users/username/smarthr-ui-mcp/lib/index.js"],
+      "cwd": "/Users/username/smarthr-ui-mcp"
     }
   }
 }
 ```
+
+Replace `/Users/username/smarthr-ui-mcp` with the actual path to the MCP server.
 
 ### Development
 
@@ -55,15 +57,19 @@ pnpm test
 ## MCP Tools
 
 ### `search_components`
+
 Search components by name, category, or description.
 
 ### `get_component`
+
 Get detailed information about a specific component.
 
 ### `list_components_by_category`
+
 List all components in a specific category.
 
 ### `generate_component_code`
+
 Generate usage code for a component with specified props.
 
 ## Component Categories
