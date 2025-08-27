@@ -7,7 +7,7 @@ npm-debug.log*
 next-env.d.ts
 
 # build output
-/lib
+/lib/**/*
 
 # Jetbrains
 .idea
