@@ -10,7 +10,7 @@
     "lib"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && mkdir -p lib/data && cp src/data/components.json lib/data/components.json",
     "dev": "tsx src/index.ts",
     "start": "node lib/index.js",
     "clean": "rimraf ./lib",
