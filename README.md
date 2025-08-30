@@ -1,6 +1,7 @@
 # SmartHR UI MCP Server
 
-SmartHR UIコンポーネント用のModel Context Protocol (MCP) サーバーです。AIツールやClaude CodeがSmartHR UIコンポーネントの情報とコード生成機能に直接アクセスできるようになります。
+- SmartHR UIコンポーネント用のModel Context Protocol (MCP) サーバーです。AIツールやClaude CodeがSmartHR UIコンポーネントの情報とコード生成機能に直接アクセスできるようになります。
+- このサーバーは個人で作成したものです。利用については自己責任でお願いします。
 
 ## 機能
 
@@ -13,20 +14,19 @@ SmartHR UIコンポーネント用のModel Context Protocol (MCP) サーバー�
 
 ```bash
 # 依存パッケージをインストール
-pnpm install or npm install
+npm install
 
 # サーバーをビルド
-pnpm build or npm run build
+ npm run build
 
 # MCPサーバーを起動
-pnpm start or npm run start
+npm run start
 ```
 
 ## 使用方法
 
-### MCPサーバーとして
-
-MCPクライアントでこのサーバーを使用するように設定してください：
+- MCPクライアントでこのサーバーを使用するように設定してください。
+- `{username}`を実際のMCPサーバーのパスに置き換えてください。
 
 ### Cursor
 
@@ -35,8 +35,8 @@ MCPクライアントでこのサーバーを使用するように設定して�
   "mcpServers": {
     "smarthr-ui-mcp": {
       "command": "node",
-      "args": ["/Users/username/smarthr-ui-mcp/lib/index.js"],
-      "cwd": "/Users/username/smarthr-ui-mcp"
+      "args": ["/Users/{username}/smarthr-ui-mcp/lib/index.js"],
+      "cwd": "/Users/{username}/smarthr-ui-mcp"
     }
   }
 }
@@ -48,21 +48,12 @@ MCPクライアントでこのサーバーを使用するように設定して�
 claude mcp add smarthr-ui-mcp -s local -- node /Users/{username}/works/smarthr-ui-mcp-server/lib/index.js
 ```
 
-※`{username}`を実際のMCPサーバーのパスに置き換えてください。
-
 ### Codex
 
-### 開発
-
-```bash
-# 開発サーバーを起動
-pnpm dev
-
-# サーバーをビルド
-pnpm build
-
-# テストを実行
-pnpm test
+```
+[mcp_servers.smarthr-ui-mcp]
+args = ["/Users/{username}/works/smarthr-ui-mcp-server/lib/index.js"]
+command = "node"
 ```
 
 ## MCPリソース
@@ -113,7 +104,3 @@ src/
 └── utils/
     └── componentDiscovery.ts  # コンポーネント発見ロジック
 ```
-
-## ライセンス
-
-MIT
