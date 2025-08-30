@@ -1,26 +1,34 @@
 # SmartHR UI MCP Server
 
-Model Context Protocol (MCP) server for SmartHR UI components, providing AI tools and Claude Code with direct access to SmartHR UI component information and code generation capabilities.
+SmartHR UIコンポーネント用のModel Context Protocol (MCP) サーバーです。AIツールやClaude CodeがSmartHR UIコンポーネントの情報とコード生成機能に直接アクセスできるようになります。
 
-## Features
+## 機能
 
-- **Component Discovery**: Automatically discover and list all SmartHR UI components
-- **Component Search**: Search components by name, category, or description
-- **Code Generation**: Generate usage code for components with specified props
-- **Category Filtering**: Browse components by category (Button, Form, Layout, etc.)
+- **コンポーネント発見**: SmartHR UIの全コンポーネントを自動的に発見・一覧表示
+- **コンポーネント検索**: 名前、カテゴリ、説明によるコンポーネント検索
+- **コード生成**: 指定されたpropsでコンポーネントの使用コードを生成
+- **カテゴリフィルタリング**: カテゴリ別（Button、Form、Layoutなど）でのコンポーネント閲覧
 
-## Installation
+## インストール
 
 ```bash
-pnpm install
-pnpm build
+# 依存パッケージをインストール
+pnpm install or npm install
+
+# サーバーをビルド
+pnpm build or npm run build
+
+# MCPサーバーを起動
+pnpm start or npm run start
 ```
 
-## Usage
+## 使用方法
 
-### As MCP Server
+### MCPサーバーとして
 
-Configure your MCP client to use this server:
+MCPクライアントでこのサーバーを使用するように設定してください：
+
+### Cursor
 
 ```json
 {
@@ -34,70 +42,78 @@ Configure your MCP client to use this server:
 }
 ```
 
-Replace `/Users/username/smarthr-ui-mcp` with the actual path to the MCP server.
+### Claude Code
 
-### Development
+```
+claude mcp add smarthr-ui-mcp -s local -- node /Users/{username}/works/smarthr-ui-mcp-server/lib/index.js
+```
+
+※`{username}`を実際のMCPサーバーのパスに置き換えてください。
+
+### Codex
+
+### 開発
 
 ```bash
-# Start development server
+# 開発サーバーを起動
 pnpm dev
 
-# Build the server
+# サーバーをビルド
 pnpm build
 
-# Run tests
+# テストを実行
 pnpm test
 ```
 
-## MCP Resources
+## MCPリソース
 
-- `smarthr-ui://components` - List of all SmartHR UI components
-- `smarthr-ui://components/{name}` - Detailed information about a specific component
+- `smarthr-ui://components` - SmartHR UIの全コンポーネント一覧
+- `smarthr-ui://components/{name}` - 特定のコンポーネントの詳細情報
 
-## MCP Tools
+## MCPツール
 
 ### `search_components`
 
-Search components by name, category, or description.
+名前、カテゴリ、説明によるコンポーネント検索
 
 ### `get_component`
 
-Get detailed information about a specific component.
+特定のコンポーネントの詳細情報を取得
 
 ### `list_components_by_category`
 
-List all components in a specific category.
+特定のカテゴリの全コンポーネントを一覧表示
 
 ### `generate_component_code`
 
-Generate usage code for a component with specified props.
+指定されたpropsでコンポーネントの使用コードを生成
 
-## Component Categories
+## コンポーネントカテゴリ
 
-- **Button**: Button components and related actions
-- **Form**: Form controls and validation
-- **Layout**: Layout and spacing components
-- **Navigation**: Navigation and routing components
-- **Display**: Text, badges, and content display
-- **Feedback**: Notifications, tooltips, and user feedback
-- **Dialog**: Modals and dialog components
-- **Table**: Data table components
-- **Input**: Input fields and form elements
-- **Experimental**: Beta and experimental components
+- **Button**: ボタンコンポーネントと関連するアクション
+- **Form**: フォームコントロールとバリデーション
+- **Layout**: レイアウトとスペーシングコンポーネント
+- **Navigation**: ナビゲーションとルーティングコンポーネント
+- **Display**: テキスト、バッジ、コンテンツ表示
+- **Feedback**: 通知、ツールチップ、ユーザーフィードバック
+- **Dialog**: モーダルとダイアログコンポーネント
+- **Table**: データテーブルコンポーネント
+- **Input**: 入力フィールドとフォーム要素
+- **Experimental**: ベータ版と実験的コンポーネント
 
-## Architecture
+## アーキテクチャ
 
 ```
 src/
-├── index.ts              # MCP server entry point
+├── index.ts              # MCPサーバーのエントリーポイント
 ├── handlers/
-│   └── components.ts     # Component-related handlers
+│   └── components.ts     # コンポーネント関連のハンドラー
 ├── types/
-│   └── index.ts         # TypeScript type definitions
+│   └── index.ts         # TypeScript型定義
 └── utils/
-    └── componentDiscovery.ts  # Component discovery logic
+    └── componentDiscovery.ts  # コンポーネント発見ロジック
 ```
 
-## License
+## ライセンス
 
 MIT
